@@ -1,3 +1,8 @@
+import './Bouquets.css';
+
 export default function Bouquets(){
-    return <h1>Bouquets</h1>
+    return <div className="bouquetSection">
+        <h2>Life is too short to not buy yourself flowers.</h2>
+    <h1>Our collection</h1>
+    </div>
 }

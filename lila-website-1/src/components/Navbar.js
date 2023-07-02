@@ -1,16 +1,7 @@
-import { click } from '@testing-library/user-event/dist/click'
+import logo_orange from "../images/logo-orange.png"
 import React, {useState, Fragment} from 'react'
-import {Link, NavLink} from 'react-router-dom'
 import { Cart } from 'react-bootstrap-icons';
 import './Navbar.css';
-
-const navigation = [
-  {name : 'BOUQUETS', href:'/Bouquets'},
-  {name : 'CUSTOM', href:'/Custom'},
-  {name : 'ABOUT', href:'/About'},
-  {name : 'FR', href:'/'},
-  {name : 'MY CART', href:'/MyCart'},
-]
 
 function Navbar() {
   return (
@@ -18,6 +9,7 @@ function Navbar() {
     <nav className="navbar">
     <a href="/">
               <h1>LILA</h1>
+              {/* <img src={logo_orange} alt='LILA logo'/> */}
             </a>
             <div className="links">
             <a href="/Bouquets">BOUQUETS</a>
