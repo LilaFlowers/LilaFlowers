@@ -1,14 +1,16 @@
 {
   "files": {
-    "main.css": "/LilaFlowers.github.io/static/css/main.073c9b0a.css",
-    "main.js": "/LilaFlowers.github.io/static/js/main.3ccec9f9.js",
-    "static/media/logo.svg": "/LilaFlowers.github.io/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/LilaFlowers.github.io/index.html",
-    "main.073c9b0a.css.map": "/LilaFlowers.github.io/static/css/main.073c9b0a.css.map",
-    "main.3ccec9f9.js.map": "/LilaFlowers.github.io/static/js/main.3ccec9f9.js.map"
+    "main.css": "/LilaFlowers/static/css/main.1b18b781.css",
+    "main.js": "/LilaFlowers/static/js/main.6a9dc0de.js",
+    "static/media/video_blog.mp4": "/LilaFlowers/static/media/video_blog.1a61cdfeceaf1b42aa27.mp4",
+    "static/media/about_gardener.jpg": "/LilaFlowers/static/media/about_gardener.c082db77826e4654a9b2.jpg",
+    "static/media/pink_roses.png": "/LilaFlowers/static/media/pink_roses.68d87e2a794fa585c5d7.png",
+    "index.html": "/LilaFlowers/index.html",
+    "main.1b18b781.css.map": "/LilaFlowers/static/css/main.1b18b781.css.map",
+    "main.6a9dc0de.js.map": "/LilaFlowers/static/js/main.6a9dc0de.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.3ccec9f9.js"
+    "static/css/main.1b18b781.css",
+    "static/js/main.6a9dc0de.js"
   ]
 }
