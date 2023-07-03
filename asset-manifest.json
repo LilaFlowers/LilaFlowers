@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/LilaFlowers/static/css/main.1b18b781.css",
-    "main.js": "/LilaFlowers/static/js/main.6a9dc0de.js",
+    "main.css": "/LilaFlowers/static/css/main.75385b12.css",
+    "main.js": "/LilaFlowers/static/js/main.a809cd63.js",
     "static/media/video_blog.mp4": "/LilaFlowers/static/media/video_blog.1a61cdfeceaf1b42aa27.mp4",
     "static/media/about_gardener.jpg": "/LilaFlowers/static/media/about_gardener.c082db77826e4654a9b2.jpg",
+    "static/media/pink_lemonade.webp": "/LilaFlowers/static/media/pink_lemonade.bd91a921b09ca811e181.webp",
     "static/media/pink_roses.png": "/LilaFlowers/static/media/pink_roses.68d87e2a794fa585c5d7.png",
     "index.html": "/LilaFlowers/index.html",
-    "main.1b18b781.css.map": "/LilaFlowers/static/css/main.1b18b781.css.map",
-    "main.6a9dc0de.js.map": "/LilaFlowers/static/js/main.6a9dc0de.js.map"
+    "main.75385b12.css.map": "/LilaFlowers/static/css/main.75385b12.css.map",
+    "main.a809cd63.js.map": "/LilaFlowers/static/js/main.a809cd63.js.map"
   },
   "entrypoints": [
-    "static/css/main.1b18b781.css",
-    "static/js/main.6a9dc0de.js"
+    "static/css/main.75385b12.css",
+    "static/js/main.a809cd63.js"
   ]
 }
