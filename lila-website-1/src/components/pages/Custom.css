@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Antic+Didone&family=Work+Sans&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.customSection h1 {
+  font-size: 50px;
+  padding-left: 50px;
+  font-family: "Antic Didone", serif;
+  color: #ea9e41;
+  padding-top: 25px;
+}
+
+.customSection h2 {
+  font-size: 20px;
+  padding-left: 50px;
+  color: #7a7878;
+  font-family: "Work Sans", sans-serif;
+}
+
+.customSection .row {
+  padding-left: 50px;
+  padding-top: 25px;
+}
+
+.customSection .h5 {
+  font-family: "Antic Didone", serif;
+  color: #ea9e41;
+  font-size: 30px;
+}
+
+.btn-primary {
+  --bs-btn-bg: #ecf2ce !important;
+  --bs-btn-border-color: #7a7878 !important;
+  --bs-btn-hover-bg: #f8e4d1 !important;
+  --bs-btn-hover-border-color: #7a7878 !important;
+  --bs-btn-active-bg: #ea9e41 !important;
+  --bs-btn-active-border-color: #7a7878 !important;
+}
+
+.btn {
+  font-family: "Work Sans", sans-serif !important;
+  color: #7a7878 !important;
+  padding-left: 50px;
+}
+
+img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}

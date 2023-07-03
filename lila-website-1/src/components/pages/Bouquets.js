@@ -1,4 +1,5 @@
 import './Bouquets.css';
+import React from 'react';
 
 export default function Bouquets(){
     return <div className="bouquetSection">

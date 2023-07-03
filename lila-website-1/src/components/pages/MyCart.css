@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Antic+Didone&family=Work+Sans&display=swap");
+
+.accordion-button {
+  background-color: #ecf2ce;
+  font-family: "Antic Didone", serif;
+  color: #ea9e41;
+  font-size: 25px;
+}
+.accordion-button:not(.collapsed) {
+  background-color: #ecf2ce;
+  font-family: "Antic Didone", serif;
+  color: #ea9e41;
+  font-size: 25px;
+}
+
+.message h2 {
+  font-family: "Work Sans", sans-serif;
+  color: #7a7878;
+  font-size: 20px;
+  padding: 25px;
+}
+
+.form-control {
+  color: #999797;
+  font-family: "Work Sans", sans-serif;
+  font-size: 15px;
+}
+
+.cartSection p {
+  font-family: "Work Sans", sans-serif;
+  color: #7a7878;
+  font-size: 15px;
+}
+
+.cartSection h1 {
+  font-family: "Antic Didone", serif;
+  color: #ea9e41;
+  font-size: 35px;
+  padding-top: 30px;
+}
+
+.confirmation p {
+  font-family: "Work Sans", sans-serif;
+  color: #7a7878;
+  font-size: 15px;
+  text-align: center;
+}
+
+.confirmation h1 {
+  text-align: center;
+}
+.cartItems h1 {
+  padding-left: 25px;
+}
