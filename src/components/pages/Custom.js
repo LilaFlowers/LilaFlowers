@@ -69,5 +69,8 @@ export default function Custom(){
             </Card>
             </Col>
         </Row>
+        <div className="buttonAdd">
+        <Button style={{ width: '30rem' }}>Add to cart</Button>
+        </div>
         </div>
 }

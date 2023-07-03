@@ -12,7 +12,7 @@ function MyCart() {
     <h1>My cart</h1>
     </div>
     <div className="message">
-    <h2>You're on your way to beautiful flowers sent your way! <br/>Simply complete this section to confirm your order.</h2>
+    <h2>You're close to having beautiful flowers sent your way! <br/>Simply complete this section to confirm your order.</h2>
     </div>
     <Accordion defaultActiveKey="0" flush>
       <Accordion.Item eventKey="0">

@@ -14,9 +14,10 @@
 
 .container img {
   width: 500px;
+  height: 300px;
   object-fit: cover;
-  padding-left: 50px;
   padding-bottom: 20px;
+  align-items: left;
 }
 
 .aboutSection h1 {

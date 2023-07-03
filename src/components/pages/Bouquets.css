@@ -21,3 +21,19 @@
   color: #7a7878;
   font-family: "Work Sans", sans-serif;
 }
+
+body {
+  font-family: "Work Sans", sans-serif !important;
+  color: #7a7878;
+}
+.bouquetSection .row {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 25px;
+}
+
+img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}

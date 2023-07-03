@@ -7,10 +7,10 @@ function Navbar() {
   return (
     <>
     <nav className="navbar">
-    <a href="/">
+    <a href="/" id="name">
               <h1>LILA</h1>
-              {/* <img src={logo_orange} alt='LILA logo'/> */}
-            </a>
+              </a>
+              <img src={logo_orange} alt='LILA logo'/>
             <div className="links">
             <a href="/Bouquets">BOUQUETS</a>
             <a href="/Custom">CUSTOM</a>
