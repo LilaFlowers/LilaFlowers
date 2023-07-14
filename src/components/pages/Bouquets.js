@@ -8,7 +8,7 @@ import pink_lemonade from '../../images/pink_lemonade.webp'
 
 export default function Bouquets(){
     return <div className="bouquetSection">
-        <h2>Life is too short to not buy yourself flowers.</h2>
+        <h2>Life is too short to not buy flowers.</h2>
     <h1>Our collection</h1>
 <Row>
     <Col>
