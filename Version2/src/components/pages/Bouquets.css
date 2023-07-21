@@ -1,10 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Antic+Didone&family=Work+Sans&display=swap");
 
-* {
+.bouquetSection {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  background-color: #fffbf7;
+}
+
+.form-check {
+  color: #7a7878;
+  font-family: "Work Sans", sans-serif;
 }
 
 .bouquetSection h1 {
@@ -22,18 +28,24 @@
   font-family: "Work Sans", sans-serif;
 }
 
-body {
+.bouquetSection body {
   font-family: "Work Sans", sans-serif !important;
   color: #7a7878;
 }
-.bouquetSection .row {
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-top: 25px;
+
+.border.m-3.row {
+  border: 0 !important;
+  color: #7a7878;
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
 }
 
-img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
+.bouquet_card p {
+  color: #7a7878;
+  font-family: "Work Sans", sans-serif;
+}
+.bouquet_card .card-title {
+  font-family: "Antic Didone", serif;
+  color: #ea9e41;
+  font-size: 30px;
 }

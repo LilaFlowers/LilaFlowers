@@ -1,77 +1,55 @@
 import React from "react";
-import {
-Box,
-Container,
-Row,
-Column,
-FooterLink,
-Heading,
-} from "./FooterStyles";
+import './Footer.css';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import {Instagram, Youtube, Facebook, Envelope, Telephone } from 'react-bootstrap-icons';
+import logoblanc from '../images/logo-blanc.png'
 
 const Footer = () => {
 return (
-	<Box>
-	<h1 style={{ color: "#7A7878",
-				textAlign: "center",
-				marginTop: "-50px" }}>
-		LILA
-	</h1>
-	<Container>
-		<Row>
-		<Column>
-			<Heading>About Us</Heading>
-			<FooterLink href="#">Aim</FooterLink>
-			<FooterLink href="#">Vision</FooterLink>
-			<FooterLink href="#">Testimonials</FooterLink>
-		</Column>
-		<Column>
-			<Heading>Services</Heading>
-			<FooterLink href="#">Writing</FooterLink>
-			<FooterLink href="#">Internships</FooterLink>
-			<FooterLink href="#">Coding</FooterLink>
-			<FooterLink href="#">Teaching</FooterLink>
-		</Column>
-		<Column>
-			<Heading>Contact Us</Heading>
-			<FooterLink href="#">Uttar Pradesh</FooterLink>
-			<FooterLink href="#">Ahemdabad</FooterLink>
-			<FooterLink href="#">Indore</FooterLink>
-			<FooterLink href="#">Mumbai</FooterLink>
-		</Column>
-		<Column>
-			<Heading>Social Media</Heading>
-			<FooterLink href="#">
-			<i className="fab fa-facebook-f">
-				<span style={{ marginLeft: "10px" }}>
-				Facebook
-				</span>
-			</i>
-			</FooterLink>
-			<FooterLink href="#">
-			<i className="fab fa-instagram">
-				<span style={{ marginLeft: "10px" }}>
-				Instagram
-				</span>
-			</i>
-			</FooterLink>
-			<FooterLink href="#">
-			<i className="fab fa-twitter">
-				<span style={{ marginLeft: "10px" }}>
-				Twitter
-				</span>
-			</i>
-			</FooterLink>
-			<FooterLink href="#">
-			<i className="fab fa-youtube">
-				<span style={{ marginLeft: "10px" }}>
-				Youtube
-				</span>
-			</i>
-			</FooterLink>
-		</Column>
-		</Row>
-	</Container>
-	</Box>
+	<div className='footer'>
+    <div className='footer_green'>
+<p> • BIRTHDAYS • ANNIVERSARIES • FUNERALS • CELEBRATIONS • GIFTS • DECORATIONS • </p>
+    </div>
+    <div className='footer_pink'>
+      <Row>
+      <Col>
+      <Row>
+        <div className='lined_icons'>
+          <a href='https://www.facebook.com/' target='_blank'>
+        <Facebook size={60}/>
+        </a>
+        <a href='https://www.youtube.com/' target='_blank'>
+        <Youtube size={60}/>
+        </a>
+        <a href='https://www.instagram.com/' target='_blank'>
+        <Instagram size={60}/>
+        </a>
+        </div>
+      </Row>
+        </Col>
+        <Col>
+        <img src={logoblanc} alt="LILA logo"/>
+        <hr/>
+        <p>Copyright 2023</p>
+        </Col>
+        <Col>
+        <div className='center'>
+        <Row>
+          <div className='mail'>
+          <Envelope size={30}/> <p>HELP@LILAFLOWERS.COM</p>
+          </div>
+        </Row>
+        <Row>
+          <div className='mail'>
+          <Telephone size={30}/> <p>1-000-000-0000</p>
+          </div>
+        </Row>
+        </div>
+        </Col>
+      </Row>
+    </div>
+    </div>
 );
 };
 export default Footer;

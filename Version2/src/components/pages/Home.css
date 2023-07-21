@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Antic+Didone&family=Work+Sans&display=swap");
+
+* {
+  margin: 0;
+}
+.home_bouquets .row {
+  background-color: #f8e4d1;
+  padding: 20px;
+}
+
+.homeBouquetSection h1 {
+  font-size: 500%;
+  font-family: "Antic Didone", serif;
+  color: #ea9e41;
+}
+
+.homeBouquetSection p {
+  font-family: "Work Sans", sans-serif;
+  color: #7a7878;
+}
+
+.homeBouquetSection h2 {
+  font-size: 20px;
+  padding-top: 20px;
+  color: #7a7878;
+  font-family: "Work Sans", sans-serif;
+}
+
+.homeBouquetSection .card {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.homeBouquetSection #back {
+  height: 480px;
+}
+
+.homeBouquetSection .textontop {
+  position: absolute;
+  left: 1%;
+  top: 17%;
+  padding-left: 10%;
+}
+.homeBouquetSection svg {
+  color: #7a7878;
+}
+
+.homeBouquetSection button {
+  width: fit-content;
+}
+.buttonContext {
+  display: flex;
+  align-items: center;
+}
+
+.buttonContext svg {
+  padding-left: 5px;
+  float: right;
+}
+
+#sun_icon {
+  padding-top: 20px;
+}
+
+.icon_section .row {
+  background-color: #fffbf7;
+}
+
+.icon_section svg {
+  color: #ea9e41;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.icon_section p {
+  text-align: center;
+  padding-top: 20px;
+  color: #7a7878;
+  font-family: "Work Sans", sans-serif;
+}
+
+.home_bouquets .btn {
+  text-align: center;
+  width: 205px;
+}
+
+.home_bouquets h5 {
+  font-family: "Antic Didone", serif;
+  color: #ea9e41;
+  font-size: 30px;
+}

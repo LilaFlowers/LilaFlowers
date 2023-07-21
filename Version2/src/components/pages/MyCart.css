@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Antic+Didone&family=Work+Sans&display=swap");
 
+.cartSection {
+  background-color: #fffbf7;
+}
 .accordion-button {
   background-color: #ecf2ce;
   font-family: "Antic Didone", serif;

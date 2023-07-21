@@ -1,18 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Antic+Didone&family=Work+Sans&display=swap");
 
-* {
+.aboutSection {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  background-color: #fffbf7;
 }
-.container {
+.aboutSection .container {
   display: flex;
   align-items: start;
   column-gap: 10px;
 }
 
-.container img {
+.aboutSection .container img {
   width: 500px;
   height: 300px;
   object-fit: cover;
@@ -29,15 +30,24 @@
   color: #ea9e41;
 }
 
-.container p {
+.aboutSection .container p {
   font-family: "Work Sans", sans-serif;
   color: #7a7878;
 }
 
-.video {
+.aboutSection .video {
   width: 700px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 40px;
+}
+
+.aboutSection .btn {
+  width: 185px;
+  font-size: 25px;
+}
+
+.about_btn {
+  text-align: center;
 }

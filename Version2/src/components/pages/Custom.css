@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Antic+Didone&family=Work+Sans&display=swap");
 
-* {
+.customSection {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  background-color: #fffbf7;
 }
 
 .customSection h1 {
@@ -43,10 +44,13 @@
   --bs-btn-active-border-color: #7a7878 !important;
 }
 
+.customSection .btn {
+  width: 205px;
+}
+
 .btn {
   font-family: "Work Sans", sans-serif !important;
   color: #7a7878 !important;
-  padding-left: 50px;
 }
 
 img {
@@ -55,7 +59,17 @@ img {
   object-fit: cover;
 }
 
-.buttonAdd {
+.customSection .buttonAdd {
   text-align: center;
   padding: 50px;
+}
+
+.customSection .card {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.customSection .col {
+  padding: 10px;
 }

@@ -4,149 +4,91 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import pink_lemonade from '../../images/pink_lemonade.webp'
+import pretty_pink from '../../images/pretty_pink.webp';
+import sunny from '../../images/sunny.webp';
+import ballet from '../../images/ballet.webp';
+import home_background from '../../images/home_background.png';
+import { Sun, Truck, ChatLeftDots, Tree, Gift, ChevronDoubleRight} from 'react-bootstrap-icons';
+import { useNavigate } from 'react-router-dom';
+import logoblanc from '../../images/logo-blanc.png'
 
-export default function Bouquets(){
-    return <div className="bouquetSection">
-        <h2>Life is too short to not buy yourself flowers.</h2>
-    <h1>Our collection</h1>
+export default function Home(){
+  const navigate = useNavigate()
+    return <div className="homeBouquetSection">
+          <img src={home_background} id="back" alt="Bouquet background"/>
+          <div className='textontop'>
+    <h1>Here comes <br/>the sun!</h1>
+
+    <Button onClick={() => navigate('/Bouquets')}>
+      <div className='buttonContext'>
+      Check out our summer favorites  
+      <ChevronDoubleRight size={30}/>
+      </div>
+    </Button>
+    <Sun id='sun_icon' size={100}/>
+    </div>
+    <div className='home_bouquets'>
 <Row>
     <Col>
     <Card style={{ width: '15rem' }}>
-      <Card.Img variant="top" src={pink_lemonade} />
+      <Card.Img variant="top" src={pretty_pink} />
       <Card.Body>
         <Card.Text>
-        PINK LEMONADE<br/>BOUQUET<br/>$80
+        <h5>Pretty Pink<br/>Bouquet</h5><p>$75</p>
         </Card.Text>
-        <Button variant="primary">Add to cart</Button>
+        <Button onClick={() => navigate('/Bouquets')}>
+      See more info  
+    </Button>
       </Card.Body>
     </Card>
     </Col>
     <Col>
     <Card style={{ width: '15rem' }}>
-      <Card.Img variant="top" src={pink_lemonade} />
+      <Card.Img variant="top" src={sunny} />
       <Card.Body>
         <Card.Text>
-        PINK LEMONADE<br/>BOUQUET<br/>$80
+        <h5>Sunny <br/>Bouquet</h5> <p>$80</p>
         </Card.Text>
-        <Button variant="primary">Add to cart</Button>
-      </Card.Body>
+        <Button onClick={() => navigate('/Bouquets')}>
+      See more info  
+    </Button>
+          </Card.Body>
     </Card>
     </Col>
     <Col>
     <Card style={{ width: '15rem' }}>
-      <Card.Img variant="top" src={pink_lemonade} />
+      <Card.Img variant="top" src={ballet} />
       <Card.Body>
         <Card.Text>
-        PINK LEMONADE<br/>BOUQUET<br/>$80
+        <h5>At The Ballet Bouquet</h5><p>$65</p>
         </Card.Text>
-        <Button variant="primary">Add to cart</Button>
-      </Card.Body>
-    </Card>
-    </Col>
-    <Col>
-    <Card style={{ width: '15rem' }}>
-      <Card.Img variant="top" src={pink_lemonade} />
-      <Card.Body>
-        <Card.Text>
-        PINK LEMONADE<br/>BOUQUET<br/>$80
-        </Card.Text>
-        <Button variant="primary">Add to cart</Button>
-      </Card.Body>
+        <Button onClick={() => navigate('/Bouquets')}>
+      See more info  
+    </Button>
+          </Card.Body>
     </Card>
     </Col>
     </Row>
-    <Row>
-    <Col>
-    <Card style={{ width: '15rem' }}>
-      <Card.Img variant="top" src={pink_lemonade} />
-      <Card.Body>
-        <Card.Text>
-        PINK LEMONADE<br/>BOUQUET<br/>$80
-        </Card.Text>
-        <Button variant="primary">Add to cart</Button>
-      </Card.Body>
-    </Card>
-    </Col>
-    <Col>
-    <Card style={{ width: '15rem' }}>
-      <Card.Img variant="top" src={pink_lemonade} />
-      <Card.Body>
-        <Card.Text>
-        PINK LEMONADE<br/>BOUQUET<br/>$80
-        </Card.Text>
-        <Button variant="primary">Add to cart</Button>
-      </Card.Body>
-    </Card>
-    </Col>
-    <Col>
-    <Card style={{ width: '15rem' }}>
-      <Card.Img variant="top" src={pink_lemonade} />
-      <Card.Body>
-        <Card.Text>
-        PINK LEMONADE<br/>BOUQUET<br/>$80
-        </Card.Text>
-        <Button variant="primary">Add to cart</Button>
-      </Card.Body>
-    </Card>
-    </Col>
-    <Col>
-    <Card style={{ width: '15rem' }}>
-      <Card.Img variant="top" src={pink_lemonade} />
-      <Card.Body>
-        <Card.Text>
-        PINK LEMONADE<br/>BOUQUET<br/>$80
-        </Card.Text>
-        <Button variant="primary">Add to cart</Button>
-      </Card.Body>
-    </Card>
-    </Col>
-    </Row>
-    <Row>
-    <Col>
-    <Card style={{ width: '15rem' }}>
-      <Card.Img variant="top" src={pink_lemonade} />
-      <Card.Body>
-        <Card.Text>
-        PINK LEMONADE<br/>BOUQUET<br/>$80
-        </Card.Text>
-        <Button variant="primary">Add to cart</Button>
-      </Card.Body>
-    </Card>
-    </Col>
-    <Col>
-    <Card style={{ width: '15rem' }}>
-      <Card.Img variant="top" src={pink_lemonade} />
-      <Card.Body>
-        <Card.Text>
-        PINK LEMONADE<br/>BOUQUET<br/>$80
-        </Card.Text>
-        <Button variant="primary">Add to cart</Button>
-      </Card.Body>
-    </Card>
-    </Col>
-    <Col>
-    <Card style={{ width: '15rem' }}>
-      <Card.Img variant="top" src={pink_lemonade} />
-      <Card.Body>
-        <Card.Text>
-        PINK LEMONADE<br/>BOUQUET<br/>$80
-        </Card.Text>
-        <Button variant="primary">Add to cart</Button>
-      </Card.Body>
-    </Card>
-    </Col>
-    <Col>
-    <Card style={{ width: '15rem' }}>
-      <Card.Img variant="top" src={pink_lemonade} />
-      <Card.Body>
-        <Card.Text>
-        PINK LEMONADE<br/>BOUQUET<br/>$80
-        </Card.Text>
-        <Button variant="primary">Add to cart</Button>
-      </Card.Body>
-    </Card>
-    </Col>
-    </Row>
+    <div className='icon_section'>
+      <Row>
+        <Col>
+        <Truck size={80}/>
+        <p>DELIVERY IN 48 HOURS</p>
+        </Col>
+        <Col>
+        <ChatLeftDots size={80}/>
+        <p>AT YOUR SERVICE 24/7</p>
+        </Col>
+        <Col>
+        <Tree size={80}/>
+        <p>ENVIRONNEMENT FRIENDLY PRACTICES</p>
+        </Col>
+        <Col>
+        <Gift size={80}/>
+        <p>INCLUDES A PERSONALIZED MESSAGE</p>
+        </Col>
+      </Row>
+    </div>
+    </div>
     </div>
 }
