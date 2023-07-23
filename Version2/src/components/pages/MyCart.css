@@ -91,3 +91,35 @@
 .confirmation {
   padding-bottom: 30px;
 }
+
+.formSec {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.formSec .row {
+  padding-bottom: 15px;
+}
+.btn:disabled {
+  background-color: #bfc3a9;
+  border-color: #7a7878;
+}
+
+.center {
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 0;
+}
+
+.form .footer {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.progress-bar {
+  background-color: #ea9e41;
+}
+
+.datePick {
+  padding-bottom: 15px;
+}

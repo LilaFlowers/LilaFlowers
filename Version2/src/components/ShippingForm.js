@@ -1,122 +1,167 @@
-import React from 'react';
-import { Formik, Field, Form, ErrorMessage, getIn } from 'formik';
-import * as Yup from 'yup';
-import Row from 'react-bootstrap/esm/Row';
-import Col from 'react-bootstrap/esm/Col';
+import Button from 'react-bootstrap/Button';
+import Col from 'react-bootstrap/Col';
+import Form from 'react-bootstrap/Form';
+import InputGroup from 'react-bootstrap/InputGroup';
+import Row from 'react-bootstrap/Row';
+import * as formik from 'formik';
+import * as yup from 'yup';
 
-const ShippingForm =({nextStep}) => {
+function ShippingForm() {
+  const { Formik } = formik;
+  const phoneRegExp = /^([0-9]{10})?$/
+  const postalRegExp = /^([A-Z][0-9][A-Z])\s*([0-9][A-Z][0-9])$/;
 
-    const phoneRegExp = /^([0-9]{10})?$/
-    const postalRegExp = /^([A-Z][0-9][A-Z])\s*([0-9][A-Z][0-9])$/;
+  const schema = yup.object().shape({
+    firstName: yup.string().required('Required').max(15, 'Must be 15 characters or less'),
+    lastName: yup.string().required('Required').max(20, 'Must be 20 characters or less'),
+    email: yup.string().required('Required').email('Invalid email address'),
+    phone: yup.string().required('Required').matches(phoneRegExp, 'Phone number is not valid. 10 digit max.'),
+    address: yup.string().required('Required').max(25, 'Must be 25 characters or less'),
+    city: yup.string().required('Required').max(25, 'Must be 25 characters or less'),
+    country: yup.string().required('Required').max(25, 'Must be 25 characters or less'),
+    postal: yup.string().required('Required').matches(postalRegExp, 'Postal code is not valid. Format: "X0X 0X0"')
+  });
 
-    function getStyles(errors, fieldName) {
-        if (getIn(errors, fieldName)) {
-            return {
-                border: '1px solid red',
-            }
-        }
-    }
-
-    return (
-        <>
-            <Formik
-                initialValues={{ firstName: '', lastName: '', email: '', phone: '', address: '', city: '', country: '', postal: ''}}
-                validationSchema={Yup.object({
-                  firstName: Yup.string()
-                  .max(15, 'Must be 15 characters or less')
-                  .required('Required'),
-              lastName: Yup.string()
-                  .max(20, 'Must be 20 characters or less')
-                  .required('Required'),
-              email: Yup.string()
-                  .email('Invalid email address')
-                  .required('Required'),
-              phone: Yup.string()
-                  .matches(phoneRegExp, 'Phone number is not valid. 10 digit max.')
-                  .required('Required'),
-              address: Yup.string()
-                  .max(25, 'Must be 25 characters or less')
-                  .required('Required'),
-              city: Yup.string()
-                  .max(25, 'Must be 25 characters or less')
-                  .required('Required'),
-              country: Yup.string()
-                  .max(25, 'Must be 25 characters or less')
-                  .required('Required'),
-              postal: Yup.string()
-                  .matches(postalRegExp, 'Postal code is not valid. Format: "X0X 0X0"')
-                  .required('Required')
-                })}
-                onSubmit={(values, { setSubmitting }) => {
-                    setTimeout(() => {
-                        setSubmitting(false);
-                        nextStep();
-                    }, 400);
-                }}
-            >
-                {formik => {
-                    console.log(formik)
-                    return (
-                      <Form>
-                      <Row>
-                      <Col sm>
-                          <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                              <Field name="firstName" className="form-control" type="text" placeholder="FIRST NAME" style={formik.touched.firstName ? getStyles(formik.errors, 'firstName') : {}}/>
-                              <ErrorMessage name="firstName"/>
-                          </Form.Group>
-                      </Col>
-                      <Col sm>
-                          <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                              <Field name="lastName" className="form-control" type="text" placeholder="LAST NAME" style={formik.touched.lastName ? getStyles(formik.errors, 'lastName') : {}}/>
-                              <ErrorMessage name="lastName"/>
-                          </Form.Group>
-                      </Col>
-                      <Col sm>
-                          <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                              <Field name="email" className="form-control" type="text" placeholder="EMAIL ADDRESS" style={formik.touched.email ? getStyles(formik.errors, 'email') : {}}/>
-                              <ErrorMessage name="email"/>
-                          </Form.Group>
-                      </Col>
-                      <Col sm>
-                          <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                              <Field name="phone" className="form-control" type="number" placeholder="PHONE NUMBER" {...formik.getFieldProps('phone')} style={formik.touched.phone ? getStyles(formik.errors, 'phone') : {}}/>
-                              <ErrorMessage name="phone"/>
-                          </Form.Group>
-                      </Col>
-                      </Row>
-                      <Row>
-                      <Col sm>
-                          <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                              <Field name="address" className="form-control" type="text" placeholder="DELIVERY ADDRESS" style={formik.touched.address ? getStyles(formik.errors, 'address') : {}}/>
-                              <ErrorMessage name="address"/>
-                          </Form.Group>
-                      </Col>
-                      <Col sm>
-                          <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                              <Field name="city" className="form-control" type="text" placeholder="CITY" style={formik.touched.city ? getStyles(formik.errors, 'city') : {}}/>
-                              <ErrorMessage name="city"/>
-                          </Form.Group>
-                      </Col>
-                      <Col sm>
-                          <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                              <Field name="country" className="form-control" type="text" placeholder="COUNTRY" style={formik.touched.country ? getStyles(formik.errors, 'country') : {}}/>
-                              <ErrorMessage name="country"/>
-                          </Form.Group>
-                      </Col>
-                      <Col sm>
-                          <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                              <Field name="postal" className="form-control" type="text" placeholder="POSTAL CODE" {...formik.getFieldProps('postal')} style={formik.touched.postal ? getStyles(formik.errors, 'postal') : {}}/>
-                              <ErrorMessage name="postal"/>
-                          </Form.Group>
-                      </Col>
-                      </Row>
-                      
-</Form>          
-                    )
-                }}
-            </Formik>
-        </>
-    );
-};
+  return (
+    <Formik
+      validationSchema={schema}
+      onSubmit={console.log}
+      initialValues={{
+        firstName: '',
+        lastName: '',
+        email: '',
+        phone: '',
+        address: '',
+        city: '',
+        country: '',
+        postal: ''
+      }}
+    >
+      {({ handleSubmit, handleChange, values, touched, errors }) => (
+        <Form noValidate onSubmit={handleSubmit}>
+          <Row>
+            <Form.Group as={Col} controlId="validationFormik01">
+              <Form.Control
+                type="text"
+                name="firstName"
+                value={values.firstName}
+                onChange={handleChange}
+                isValid={touched.firstName && !errors.firstName}
+                isInvalid={!!errors.firstName}
+                placeholder='FIRST NAME'
+              />
+              <Form.Control.Feedback type="invalid">
+                {errors.firstName}
+              </Form.Control.Feedback>
+            </Form.Group>
+            <Form.Group as={Col} controlId="validationFormik02">
+              <Form.Control
+                type="text"
+                name="lastName"
+                value={values.lastName}
+                onChange={handleChange}
+                isValid={touched.lastName && !errors.lastName}
+                isInvalid={!!errors.lastName}
+                placeholder='LAST NAME'
+              />
+              <Form.Control.Feedback type='invalid'>
+                {errors.lastName}
+              </Form.Control.Feedback>
+            </Form.Group>
+            <Form.Group as={Col} controlId="validationFormik03">
+              <Form.Control
+                type="email"
+                name="email"
+                value={values.email}
+                onChange={handleChange}
+                isValid={touched.email && !errors.email}
+                isInvalid={!!errors.email}
+                placeholder='EMAIL ADDRESS'
+              />
+              <Form.Control.Feedback type='invalid'>
+                {errors.email}
+                </Form.Control.Feedback>
+            </Form.Group>
+            <Form.Group as={Col} controlId="validationFormik04">
+              <Form.Control
+                type="number"
+                name="phone"
+                value={values.phone}
+                onChange={handleChange}
+                isValid={touched.phone && !errors.phone}
+                isInvalid={!!errors.phone}
+                placeholder='PHONE NUMBER'
+              />
+              <Form.Control.Feedback type='invalid'>
+                {errors.phone}
+                </Form.Control.Feedback>
+            </Form.Group>
+          </Row>
+          <Row>
+            <Form.Group as={Col} controlId="validationFormik05">
+              <Form.Control
+                type="text"
+                name="address"
+                value={values.address}
+                onChange={handleChange}
+                isValid={touched.address && !errors.address}
+                isInvalid={!!errors.address}
+                placeholder='DELIVERY ADDRESS'
+              />
+              <Form.Control.Feedback type='invalid'>
+                {errors.address}
+                </Form.Control.Feedback>
+            </Form.Group>
+            <Form.Group as={Col} controlId="validationFormik06">
+              <Form.Control
+                type="text"
+                name="city"
+                value={values.city}
+                onChange={handleChange}
+                isValid={touched.city && !errors.city}
+                isInvalid={!!errors.city}
+                placeholder='CITY'
+              />
+              <Form.Control.Feedback type='invalid'>
+                {errors.city}
+                </Form.Control.Feedback>
+            </Form.Group>
+            <Form.Group as={Col} controlId="validationFormik07">
+              <Form.Control
+                type="text"
+                name="country"
+                value={values.country}
+                onChange={handleChange}
+                isValid={touched.country && !errors.country}
+                isInvalid={!!errors.country}
+                placeholder='COUNTRY'
+              />
+              <Form.Control.Feedback type='invalid'>
+                {errors.country}
+                </Form.Control.Feedback>
+            </Form.Group>
+            <Form.Group as={Col} controlId="validationFormik08">
+              <Form.Control
+                type="text"
+                name="postal"
+                value={values.postal}
+                onChange={handleChange}
+                isValid={touched.postal && !errors.postal}
+                isInvalid={!!errors.postal}
+                placeholder='POSTAL CODE'
+              />
+              <Form.Control.Feedback type='invalid'>
+                {errors.postal}
+                </Form.Control.Feedback>
+            </Form.Group>
+          </Row>
+          <div className='center'>
+          <Button type="submit">Confirm values</Button>
+          </div>
+        </Form>
+      )}
+    </Formik>
+  );
+}
 
 export default ShippingForm;

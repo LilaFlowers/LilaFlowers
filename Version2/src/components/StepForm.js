@@ -3,58 +3,51 @@ import Stepper from 'react-stepper-horizontal';
 import ShippingForm from './ShippingForm';
 import DeliveryForm from './DeliveryForm';
 import PaymentForm from './PaymentForm';
+import { Button } from 'react-bootstrap';
+import ProgressBar from 'react-bootstrap/ProgressBar';
 
 function StepForm ()  {
-    const [formState, setFormState] = useState({
+    const [page, setPage] = useState(0);
+    const FormTitles = ["1. Shipping information", "2. Delivery details", "3. Payment information"]
 
-    })
-    const [steps, setSteps] = useState({
-        steps: [{
-          title: '1. Shipping information',
-          onClick: (e) => {
-            e.preventDefault()
-            console.log('onClick', 1)
-          }
-        }, {
-          title: '2. Delivery details',
-          onClick: (e) => {
-            e.preventDefault()
-            console.log('onClick', 2)
-          }
-        }, {
-          title: '3. Payment information',
-          onClick: (e) => {
-            e.preventDefault()
-            console.log('onClick', 3)
-          }
-        }],
-        currentStep: 0,
-    })
-
-    const nextStep = () => {
-        setSteps({
-            ...steps,
-            currentStep: steps.currentStep+1
-        })
-    }
-
-    const renderSwitch = () => { 
-     switch (steps.currentStep) {
-        case 0:
-            return <ShippingForm nextStep={nextStep} />
-        case 1:
-            return <PaymentForm/>
-        case 2:
+    const PageDisplay = () => {
+        if (page === 0) {
+            return <ShippingForm/>
+        }
+        else if (page ===1){
             return <DeliveryForm/>
-        default:
-            break;
-     }
+        }
+        else {
+            return <PaymentForm/>
+        }
     }
+
     return (
         <div>
-            <Stepper steps={steps.steps} activeStep={steps.currentStep} />
-            {renderSwitch()}
-            {/* <button onClick={nextStep}>Next step!</button> */}
+            <div className='form'>
+                <ProgressBar now={page ===0 ? "33" : page === 1 ? "66" : "100"}/>
+                    <div className='form-container'>
+                        <div className='header'>
+                            <h1>{FormTitles[page]}</h1>
+                        </div>
+                        <div className='body'>
+                            {PageDisplay()}
+                        </div>
+                        <div className='footer'>
+                            
+                            <Button
+                            disabled={page == 0}
+                            onClick={() => {
+                                setPage((currPage) => currPage - 1);
+                            }}>Back</Button>
+                            <Button
+                            disabled={page == FormTitles.length -1}
+                            onClick={() => {
+                                setPage((currPage) => currPage + 1);
+                            }}>Next</Button>
+                        </div>
+                    </div>
+            </div>
         </div>
     );
 }
