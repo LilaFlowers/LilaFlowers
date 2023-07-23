@@ -15,15 +15,17 @@
 
 .bouquetSection h1 {
   font-size: 50px;
-  padding-left: 50px;
   font-family: "Antic Didone", serif;
   color: #ea9e41;
+  padding-left: 50px;
+  padding-top: 20px;
 }
 
 .bouquetSection h2 {
-  font-size: 20px;
   padding-left: 50px;
-  padding-top: 20px;
+
+  font-size: 20px;
+
   color: #7a7878;
   font-family: "Work Sans", sans-serif;
 }
@@ -48,4 +50,9 @@
   font-family: "Antic Didone", serif;
   color: #ea9e41;
   font-size: 30px;
+}
+
+.form-check-input:checked {
+  background-color: #ea9e41 !important;
+  border-color: #ea9e41 !important;
 }

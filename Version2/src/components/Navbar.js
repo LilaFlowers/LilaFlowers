@@ -30,6 +30,7 @@ function Navbar() {
             <a href="/Bouquets">BOUQUETS</a>
             <a href="/Custom">{t('navbar_custom')}</a>
             <a href="/About">{t('navbar_about')}</a>
+            <a href="/Reviews">{t('navbar_reviews')}</a>
             <a onClick={() => swapLanguage()} id='FR'>{t('navbar_lang')}</a>
             <a href="/MyCart">{t('navbar_cart')}
             {/* //<Cart size={25}/>*/}

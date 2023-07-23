@@ -5,11 +5,11 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/esm/Container';
 import image from '../images/green_goddess.webp'
-function Bouquet({ name, price, type, img }) {
+function Bouquet({ name, Color, price, type, img }) {
     return (
         <div className='bouquet_card'>
         <Card className='m-2' style={{ width: '18rem' }}>
-            <Card.Img variant="top" src={require('../images/'+img)}/>
+            <Card.Img variant="top" src={require('../images/'+img)} alt={"Picture of a " + Color + " bouquet of flowers"}/>
             <Card.Body>
                 <Card.Title>{name}</Card.Title>
                 <Card.Text>

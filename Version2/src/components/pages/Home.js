@@ -15,7 +15,7 @@ import logoblanc from '../../images/logo-blanc.png'
 export default function Home(){
   const navigate = useNavigate()
     return <div className="homeBouquetSection">
-          <img src={home_background} id="back" alt="Bouquet background"/>
+          <img src={home_background} id="back" alt="Bouquet of flowers background"/>
           <div className='textontop'>
     <h1>Here comes <br/>the sun!</h1>
 
@@ -31,7 +31,7 @@ export default function Home(){
 <Row>
     <Col>
     <Card style={{ width: '15rem' }}>
-      <Card.Img variant="top" src={pretty_pink} />
+      <Card.Img variant="top" src={pretty_pink} alt='Picture of a pink bouquet of flowers'/>
       <Card.Body>
         <Card.Text>
         <h5>Pretty Pink<br/>Bouquet</h5><p>$75</p>
@@ -44,7 +44,7 @@ export default function Home(){
     </Col>
     <Col>
     <Card style={{ width: '15rem' }}>
-      <Card.Img variant="top" src={sunny} />
+      <Card.Img variant="top" src={sunny} alt='Picture of a yellow bouquet of flowers'/>
       <Card.Body>
         <Card.Text>
         <h5>Sunny <br/>Bouquet</h5> <p>$80</p>
@@ -57,7 +57,7 @@ export default function Home(){
     </Col>
     <Col>
     <Card style={{ width: '15rem' }}>
-      <Card.Img variant="top" src={ballet} />
+      <Card.Img variant="top" src={ballet} alt='Picture of a pink bouquet of flowers'/>
       <Card.Body>
         <Card.Text>
         <h5>At The Ballet Bouquet</h5><p>$65</p>
@@ -90,5 +90,6 @@ export default function Home(){
       </Row>
     </div>
     </div>
+    
     </div>
 }

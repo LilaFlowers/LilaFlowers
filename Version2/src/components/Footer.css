@@ -35,16 +35,14 @@
 }
 .lined_icons {
   text-align: center;
-  margin-top: 58px;
+  margin-top: 58px !important;
 }
 
 .lined_icons svg {
   display: inline-block;
   padding: 10px;
 }
-.lined_icons .row {
-  margin-top: 0;
-}
+
 .mail {
   display: flex;
   padding-left: 100px;
@@ -59,4 +57,5 @@
 .center {
   text-align: center;
   margin-top: 58px;
+  margin-left: 100px;
 }

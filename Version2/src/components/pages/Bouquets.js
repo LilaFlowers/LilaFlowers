@@ -69,8 +69,9 @@ function updateCategory(facet, value, newChecked){
 }
 
     return <div className="bouquetSection">
-        <h2>Life is too short to not buy flowers.</h2>
-    <h1>Our collection</h1>
+    <h1>Our collection of bouquets</h1>
+    <h2>Life is too short to not buy flowers.</h2>
+
     <Row>
         <Col className='border-end' md={3}>
           <Facet_container facets={state.facets} updateCategory={updateCategory} clearAllFacetValues={clearAllFacetValues} />

@@ -56,3 +56,38 @@
 .cartItems h1 {
   padding-left: 25px;
 }
+
+.ship_info .btn {
+  text-align: center;
+  width: 205px;
+}
+.next_btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cartSection .mb-3 {
+  font-family: "Work Sans", sans-serif;
+  color: #7a7878;
+}
+
+.conf_btn {
+  text-align: center;
+}
+
+.empty {
+  padding: 30px;
+}
+
+.accordion-body {
+  background-color: #fffbf7;
+}
+
+.confirmation p {
+  margin-bottom: 0;
+}
+
+.confirmation {
+  padding-bottom: 30px;
+}

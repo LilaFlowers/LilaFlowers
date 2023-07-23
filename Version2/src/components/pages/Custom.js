@@ -17,12 +17,12 @@ import blue_orchid from '../../images/custom/blue_orchid.webp'
 
 export default function Custom(){
     return <div className="customSection">
-        <h1>Flowers... your way!</h1>
+        <h1>Flowers... the way you like them!</h1>
         <h2>Select flowers and create your own one-of-a-kind bouquet</h2>
         <Row lg={4} md={2} xs= {1}>
             <Col>
             <Card style={{ width: '15rem' }}>
-                <Card.Img variant="top" src={blue_hydrangea} />
+                <Card.Img variant="top" src={blue_hydrangea} alt='Picture of blue hydrangea flowers'/>
                 <Card.Body>
                     <Card.Title>Blue Hydrangea</Card.Title>
                     <Button>ADD TO BOUQUET</Button>
@@ -31,7 +31,7 @@ export default function Custom(){
             </Col>
             <Col>
             <Card style={{ width: '15rem' }}>
-                <Card.Img variant="top" src={pink_hydrangea} />
+                <Card.Img variant="top" src={pink_hydrangea} alt='Picture of pink hydrangea flowers'/>
                 <Card.Body>
                     <Card.Title>Pink Hydrangea</Card.Title>
                     <Button>ADD TO BOUQUET</Button>
@@ -40,7 +40,7 @@ export default function Custom(){
             </Col>
             <Col>
             <Card style={{ width: '15rem' }}>
-                <Card.Img variant="top" src={pink_orchid} />
+                <Card.Img variant="top" src={pink_orchid} alt='Picture of pink orchid flowers'/>
                 <Card.Body>
                     <Card.Title>Pink Orchid</Card.Title>
                     <Button>ADD TO BOUQUET</Button>
@@ -49,7 +49,7 @@ export default function Custom(){
             </Col>
             <Col>
             <Card style={{ width: '15rem' }}>
-                <Card.Img variant="top" src={white_orchid} />
+                <Card.Img variant="top" src={white_orchid} alt='Picture of white orchid flowers'/>
                 <Card.Body>
                     <Card.Title>White Orchid</Card.Title>
                     <Button>ADD TO BOUQUET</Button>
@@ -60,7 +60,7 @@ export default function Custom(){
         <Row lg={4} md={2} xs= {1}>
             <Col>
             <Card style={{ width: '15rem' }}>
-                <Card.Img variant="top" src={yellow_roses} />
+                <Card.Img variant="top" src={yellow_roses} alt='Picture of yellow roses'/>
                 <Card.Body>
                     <Card.Title>Yellow Roses</Card.Title>
                     <Button>ADD TO BOUQUET</Button>
@@ -69,7 +69,7 @@ export default function Custom(){
             </Col>
             <Col>
             <Card style={{ width: '15rem' }}>
-                <Card.Img variant="top" src={pink_roses} />
+                <Card.Img variant="top" src={pink_roses} alt='Picture of pink roses'/>
                 <Card.Body>
                     <Card.Title>Pink Roses</Card.Title>
                     <Button>ADD TO BOUQUET</Button>
@@ -78,7 +78,7 @@ export default function Custom(){
             </Col>
             <Col>
             <Card style={{ width: '15rem' }}>
-                <Card.Img variant="top" src={red_roses} />
+                <Card.Img variant="top" src={red_roses} alt='Picture of red roses'/>
                 <Card.Body>
                     <Card.Title>Red Roses</Card.Title>
                     <Button>ADD TO BOUQUET</Button>
@@ -87,7 +87,7 @@ export default function Custom(){
             </Col>
             <Col>
             <Card style={{ width: '15rem' }}>
-                <Card.Img variant="top" src={white_roses} />
+                <Card.Img variant="top" src={white_roses} alt='Picture of white roses'/>
                 <Card.Body>
                     <Card.Title>White Roses</Card.Title>
                     <Button>ADD TO BOUQUET</Button>

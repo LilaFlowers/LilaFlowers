@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+}
+
+.commentSection .col {
+  padding: 15px;
+}
+
+.commentSection .row {
+  background-color: #f8e4d1;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.commentSection .card {
+  color: #7a7878;
+  background-color: #fffbf7;
+  font-family: "Work Sans", sans-serif;
+}
+
+.ReviewsSection h1 {
+  font-size: 50px;
+  font-family: "Antic Didone", serif;
+  color: #ea9e41;
+}
+.reviewTitle h1 {
+  padding-left: 50px;
+  padding-top: 25px;
+}
+
+.ReviewsSection h2 {
+  font-size: 20px;
+  color: #7a7878;
+  font-family: "Work Sans", sans-serif;
+}
+
+.reviewTitle h2 {
+  padding-left: 50px;
+  padding-bottom: 20px;
+}
+
+.reviewTitle {
+  background-color: #fffbf7;
+}
+
+.postComment .col {
+  padding: 15px;
+}
+
+.postComment .row {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.postComment {
+  background-color: #fffbf7;
+}
+
+.postComment #text {
+  padding-top: 45px;
+  text-align: center;
+  padding-bottom: 45px;
+}
