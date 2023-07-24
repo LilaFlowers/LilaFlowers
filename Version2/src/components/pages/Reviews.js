@@ -16,7 +16,7 @@ export default function Reviews(){
 return <div className='ReviewsSection'>
     <div className='reviewTitle'>
         <h1>Our reviews</h1>
-        <h2>Let past customers convince you of our great service!</h2>
+        <h2>Let past customers convince you of our great service</h2>
     </div>
 <div className='commentSection'>
       <Row>

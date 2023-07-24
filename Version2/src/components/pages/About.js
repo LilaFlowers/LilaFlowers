@@ -13,6 +13,7 @@ export default function About(){
 
     return <div className="aboutSection">
     <h1>{t('about_title')}</h1>
+    <h2>{t('about_subtitle')}</h2>
     <div className="container">
     <img src={about_gardener} alt="LILA Owner picture gardening"/>
     <p>{t('about_text')}</p>

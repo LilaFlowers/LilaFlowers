@@ -1,15 +1,7 @@
 import React, {useState} from "react";
-import Accordion from 'react-bootstrap/Accordion';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Form from 'react-bootstrap/Form';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Button from 'react-bootstrap/Button';
 import StepForm from '../StepForm'
-
-import {ChevronDoubleRight} from 'react-bootstrap-icons';
 import './MyCart.css'; 
-import { Card } from "react-bootstrap";
 
 const MyCart = ({nextStep}) => {
     const [show, setShow] = useState(false);

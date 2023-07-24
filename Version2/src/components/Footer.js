@@ -34,7 +34,7 @@ return (
         <p>Copyright 2023</p>
         </Col>
         <Col>
-        <div className='center'>
+        <div className='centerFooter'>
         <Row>
           <div className='mail'>
           <Envelope size={30}/> <p>HELP@LILAFLOWERS.COM</p>

@@ -5,7 +5,14 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/esm/Container';
 import image from '../images/green_goddess.webp'
+import {useState} from 'react';
+
 function Bouquet({ name, Color, price, type, img }) {
+    const [buttonText, setButtonText] = useState('ADD TO CART');
+    const handleClick = () => {
+        setButtonText('ITEM ADDED TO CART');
+      };
+
     return (
         <div className='bouquet_card'>
         <Card className='m-2' style={{ width: '18rem' }}>
@@ -21,7 +28,7 @@ function Bouquet({ name, Color, price, type, img }) {
                     </Row>
                 </Card.Text>
                 <Container className='text-center'>
-                    <Button variant="primary">Add to cart</Button>
+                    <Button onClick={handleClick} variant="primary">{buttonText}</Button>
                 </Container>
             </Card.Body>
         </Card>

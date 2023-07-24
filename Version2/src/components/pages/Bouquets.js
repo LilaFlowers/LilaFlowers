@@ -1,11 +1,7 @@
 import './Bouquets.css';
 import React, { useEffect, useState } from 'react';
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import pink_lemonade from '../../images/pink_lemonade.webp'
-import Form from 'react-bootstrap/Form';
 import { Container } from 'react-bootstrap';
 import {data} from '../bouquets_data';
 import Bouquet from '../bouquets_card';
@@ -70,7 +66,7 @@ function updateCategory(facet, value, newChecked){
 
     return <div className="bouquetSection">
     <h1>Our collection of bouquets</h1>
-    <h2>Life is too short to not buy flowers.</h2>
+    <h2>Life is too short to not buy flowers</h2>
 
     <Row>
         <Col className='border-end' md={3}>
